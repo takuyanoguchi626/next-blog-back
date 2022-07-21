@@ -13,7 +13,6 @@ export class AuthService {
     private readonly administratorModel: Model<adminInterface>,
     private readonly JwtService: JwtService,
   ) {}
-
   /**
    * 管理者を登録する.
    *
@@ -27,7 +26,6 @@ export class AuthService {
     });
     return await newAdministrator.save();
   }
-
   /**
    * ログインする管理者情報がDBに存在するかの照合をする.
    *
@@ -47,7 +45,6 @@ export class AuthService {
     }
     return isValid;
   }
-
   /**
    * ログインをする.
    *

@@ -13,7 +13,7 @@ export class ArticlesService {
    * 記事を投稿する.
    *
    * @param createArticle - クライアントから送られてきた記事情報
-   * @returns
+   * @returns 投稿した記事情報
    */
   async createArticle(createArticle: CreateArticleDto) {
     const article = new this.articleModel({
